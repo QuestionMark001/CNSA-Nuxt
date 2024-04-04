@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>文章1</h1>
-    </div>
+    <div>视频1</div>
 </template>
 
 <script lang="ts" setup>

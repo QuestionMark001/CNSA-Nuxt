@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 15:42:15
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-03 20:19:54
+ * @LastEditTime: 2024-04-04 15:43:27
  * @FilePath: \CNSA-Nuxt\nuxt.config.ts
  * @Description: Nuxt配置文件
  * 
@@ -19,5 +19,13 @@ export default defineNuxtConfig({
         "@nuxt/content",
         "nuxt-icon",
         "@nuxtjs/color-mode"
-    ]
+    ],
+    // 配置图片资源路径
+    image: {
+        dir: 'assets/img',
+    },
+    // 指定 tailwindCSS 配置文件地址
+    tailwindcss: {
+        configPath: '~/tailwind.config.ts'
+    },
 })

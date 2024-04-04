@@ -4,7 +4,7 @@
  * @LastEditors: QuestionMark001
  * @LastEditTime: 2024-04-03 17:45:41
  * @FilePath: \CNSA-Nuxt\components\pageFooter.vue
- * @Description: 页面页尾
+ * @Description: 页尾组件
  * 
  * Copyright (c) 2024 by QuestionMark001, All Rights Reserved. 
 -->

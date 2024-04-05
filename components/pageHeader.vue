@@ -12,7 +12,7 @@
 <template>
     <div class="w-full h-20 fixed bg-white shadow-md z-50">
         <div class="text-left w-80">
-            <NuxtImg src="/CNSA_logo.png" class="fixed w-20 top-0 left-20" />
+            <NuxtImg src="/CNSA_logo.png" class="fixed w-20 top-0 left-20" title="CNSA" />
             <div class="ml-48 mt-2 w-96 font-semibold text-2xl">China National Space Administration</div>
         </div>
         <div class="container" onclick="myFunction(this)"> <!-- TODO: 移动端按钮 --> <!-- TODO: 移动端按钮点击事件 -->

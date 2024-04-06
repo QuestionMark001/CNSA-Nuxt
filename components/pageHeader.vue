@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 17:47:11
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-04 18:24:45
+ * @LastEditTime: 2024-04-06 22:31:08
  * @FilePath: \CNSA-Nuxt\components\pageHeader.vue
  * @Description: 导航栏组件
  * 
@@ -11,24 +11,46 @@
 
 <template>
     <div class="w-full h-20 fixed bg-white shadow-md z-50">
-        <div class="text-left w-80">
-            <NuxtImg src="/CNSA_logo.png" class="fixed w-20 top-0 left-20" title="CNSA" />
-            <div class="ml-48 mt-2 w-96 font-semibold text-2xl">China National Space Administration</div>
+        <div class="lg:w-80 text-left w-64">
+            <NuxtImg src="/CNSA_logo.png" class="lg:left-20 fixed w-20 top-0 left-0" title="CNSA" />
+            <div class="lg:w-96 lg:text-2xl lg:ml-48 lg:mt-2 mt-4 ml-20 font-semibold text-base">China National Space
+                Administration</div>
         </div>
-        <div class="container" onclick="myFunction(this)"> <!-- TODO: 移动端按钮 --> <!-- TODO: 移动端按钮点击事件 -->
+        <!-- FIXME: 按钮点击后有时无响应 -->
+        <div class="lg:hidden md:left-[90%] menu mt-5" @click="menuClick($event)" @touchstart.prevent="menuClick">
+            <div class="bar1" @click="menuClick($event)" @touchstart.prevent="menuClick"></div>
+            <div class="bar2" @click="menuClick($event)" @touchstart.prevent="menuClick"></div>
+            <div class="bar3" @click="menuClick($event)" @touchstart.prevent="menuClick"></div>
+        </div>
+        <ul id="menu-hide"
+            class="hidden lg:inline-flex fixed top-3 right-12 m-0 mt-3.5 p-0 flex-row gap-8 font-medium text-lg text-sky-700">
 
             <!-- 导航栏链接插槽，用于插入导航栏链接 -->
             <slot />
-
-        </div>
-        <ul class="header_item" id="menu_hide"> <!-- TODO: 移动端按钮隐藏 -->
 
         </ul>
     </div>
 </template>
 
 <script lang="ts" setup>
+function menuClick(event: MouseEvent | TouchEvent) {
+    const mobileMenu = event.target as HTMLElement;
+    if (!mobileMenu) return; // 如果 mobileMenu 为 null，则直接返回
 
+    const menu = document.getElementById('menu-hide');
+    if (!menu) return; // 如果 menu 为 null，则直接返回
+
+    if (mobileMenu.classList.toggle('change')) {
+        /* 菜单可见 */
+        menu.style.display = 'inline-block';
+        menu.style.marginTop = '20%';
+    } else {
+        /* 菜单不可见 */
+        menu.style.display = 'none';
+        menu.style.display = '';
+        menu.style.marginTop = '';
+    }
+}
 </script>
 
 <style>

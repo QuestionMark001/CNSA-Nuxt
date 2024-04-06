@@ -13,6 +13,7 @@
     <div>
         <NuxtImg src="/CNSA_logo.png" />
         <div>首页</div>
+        <h1 class="text-2xl">Hello</h1>
         <h1 class="text-2xl">Test</h1>
         <h1 class="text-2xl">Test</h1>
         <h1 class="text-2xl">Test</h1>

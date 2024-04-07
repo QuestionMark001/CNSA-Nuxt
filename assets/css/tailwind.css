@@ -49,4 +49,28 @@
             display: inline-flex;
         }
     }
+
+    /* 移动端点击菜单按钮后的导航栏样式 */
+    @media all and (max-width: 1024px) {
+        .mobile-header-style {
+            background-color: #fff;
+            top: 4rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-size: 1.5rem;
+            padding: 20px 12px 110px 12px;
+            overflow: auto;
+        }
+    }
+
+    /* 移动端点击菜单后隐藏内容页滚动条 */
+    @media all and (max-width: 1024px) {
+        .scroll-hide {
+            overflow-y: hidden;
+        }
+    }
 }

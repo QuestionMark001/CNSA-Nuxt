@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 17:47:11
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-07 18:31:28
+ * @LastEditTime: 2024-04-07 21:38:47
  * @FilePath: \CNSA-Nuxt\components\pageHeader.vue
  * @Description: 导航栏组件
  * 
@@ -22,8 +22,8 @@
             <div :class="{ 'bar2': !menuOpen, 'bar2-active': menuOpen }"></div>
             <div :class="{ 'bar3': !menuOpen, 'bar3-active': menuOpen }"></div>
         </div>
-        <ul id="menu-hide" :class="{ 'mobile-header-hide': !menuOpen, 'mobile-header-show': menuOpen }"
-            class="lg:inline-flex fixed top-3 right-12 m-0 mt-3.5 p-0 flex-row gap-8 font-medium text-lg text-sky-700 transition-all duration-300">
+        <ul :class="{ 'mobile-header-hide': !menuOpen, 'mobile-header-show mobile-header-style': menuOpen }"
+            class="lg:inline-flex lg:top-3 lg:flex-row lg:text-lg lg:p-0 lg:gap-8 fixed right-12 m-0 mt-3.5 font-medium text-sky-700 transition-all duration-300">
 
             <!-- 导航栏链接插槽，用于插入导航栏链接 -->
             <slot />
@@ -32,14 +32,29 @@
     </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const menuOpen = ref(false); // 按钮默认为不显示
 
+/**
+ * 按钮切换函数
+ */
 function toggleMenu() {
     menuOpen.value = !menuOpen.value;
+
+    // 移动端点击菜单后隐藏内容页滚动条
+    if (menuOpen.value) {
+        document.body.classList.add('scroll-hide');
+    } else {
+        document.body.classList.remove('scroll-hide');
+    }
+}
+
+/**
+ * 关闭菜单按钮函数
+ */
+function closeMenu() {
+    menuOpen.value = false;
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

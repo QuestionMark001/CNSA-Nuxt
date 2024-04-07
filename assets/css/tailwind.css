@@ -1,5 +1,5 @@
-@tailwind base; 
-@tailwind components; 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 @layer components {
@@ -14,30 +14,39 @@
         bottom: 65px;
     }
 
-    .menu .bar1,
-    .bar2,
-    .bar3 {
+    /* 添加按钮的样式 */
+    .menu div {
         width: 35px;
         height: 5px;
         background-color: #333;
         margin: 6px 0;
-        transition: 0.4s;
+        transition: transform 0.4s, opacity 0.4s;
     }
 
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    /* 为按钮添加激活样式 */
+    .menu .bar1-active {
         transform: rotate(-45deg) translate(-9px, 6px);
     }
 
-    .change .bar2 {
+    .menu .bar2-active {
         opacity: 0;
     }
 
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    .menu .bar3-active {
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    /* 移动端点击菜单按钮前 */
+    @media all and (max-width: 1024px) {
+        .mobile-header-hide {
+            display: none;
+        }
+    }
 
-
+    /* 移动端点击菜单按钮后 */
+    @media all and (max-width: 1024px) {
+        .mobile-header-hide.mobile-header-show { /* 此写法可直接覆盖掉42行的 display: none; */
+            display: inline-flex;
+        }
+    }
 }

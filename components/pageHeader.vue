@@ -17,7 +17,6 @@
                 China National Space Administration
             </div>
         </div>
-        <!-- FIXME: 按钮点击后有时无响应 -->
         <div class="lg:hidden md:left-[90%] menu mt-5" @click="toggleMenu">
             <div :class="{ 'bar1': !menuOpen, 'bar1-active': menuOpen }"></div>
             <div :class="{ 'bar2': !menuOpen, 'bar2-active': menuOpen }"></div>

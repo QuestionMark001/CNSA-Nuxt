@@ -11,22 +11,22 @@
 
 <template>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center" @click="closeMenu" to="/">
+        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/">
             <Icon name="ph:house-line" /> 首页
         </NuxtLink>
     </li>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center" @click="closeMenu" to="/about">
+        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/about">
             <Icon name="ph:info" /> 关于机构
         </NuxtLink>
     </li>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center" @click="closeMenu" to="/articles">
+        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/articles">
             <Icon name="ph:article" /> 文章公告
         </NuxtLink>
     </li>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center" @click="closeMenu" to="/videos">
+        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/videos">
             <Icon name="ph:video" /> 视频展示
         </NuxtLink>
     </li>

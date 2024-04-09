@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-04 20:37:53
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-08 19:12:26
+ * @LastEditTime: 2024-04-09 20:57:30
  * @FilePath: \CNSA-Nuxt\components\headerLink.vue
  * @Description: 导航栏链接组件
  * 
@@ -11,13 +11,8 @@
 
 <template>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/">
-            <Icon name="ph:house-line" /> 首页
-        </NuxtLink>
-    </li>
-    <li class="hover:font-semibold drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/about">
-            <Icon name="ph:info" /> 关于机构
+            <Icon name="ph:info" /> 关于我们
         </NuxtLink>
     </li>
     <li class="hover:font-semibold drop-shadow-md shadow-black">
@@ -28,6 +23,17 @@
     <li class="hover:font-semibold drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/videos">
             <Icon name="ph:video" /> 视频展示
+        </NuxtLink>
+    </li>
+    <li class="hover:font-semibold drop-shadow-md shadow-black">
+        <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="#">
+            <Icon name="ion:share-social-sharp" /> 友情链接
+        </NuxtLink>
+    </li>
+    <!-- 仅在移动端显示此项： -->
+    <li class="lg:hidden flex hover:font-semibold drop-shadow-md shadow-black">
+        <NuxtLink class="flex items-center" @click="closeMenu" to="/">
+            <Icon name="ph:house-line" /> 返回首页
         </NuxtLink>
     </li>
 </template>

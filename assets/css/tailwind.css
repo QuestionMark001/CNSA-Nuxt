@@ -5,10 +5,14 @@
 @layer components {
     /* PC端导航栏链接下划线动效 */
     @media all and (min-width: 1024px) {
+        .pc-link-line {
+            transition: border-color 0.3s ease; /* 添加过渡动画 */
+        }
+
         .pc-link-line:hover {
             border-bottom-width: 2px;
             --tw-border-opacity: 1;
-            border-color: rgb(3 105 161 / var(--tw-border-opacity));
+            border-color: rgba(3, 105, 161, var(--tw-border-opacity)); /* 蓝色 */
         }
     }
 

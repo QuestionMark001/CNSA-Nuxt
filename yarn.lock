@@ -1194,7 +1194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.2":
+"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.2":
   version: 3.11.2
   resolution: "@nuxt/kit@npm:3.11.2"
   dependencies:
@@ -1369,13 +1369,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/color-mode@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "@nuxtjs/color-mode@npm:3.3.3"
+"@nuxtjs/color-mode@npm:3.4.0":
+  version: 3.4.0
+  resolution: "@nuxtjs/color-mode@npm:3.4.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.11.1"
+    "@nuxt/kit": "npm:^3.11.2"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/ccb2f488d920533c0375f13c372ddf93402f24a835155c5d577331bb55d05ec17def57e682d0fbb3598abc9b71502f555d6ad991444793b1b12f17801ab517c4
+    pkg-types: "npm:^1.0.3"
+    semver: "npm:^7.6.0"
+  checksum: 10c0/74fc2df7de14d5364e11fa93075e6cf5a7a0e2510be428233e778709021503d5f605b722681d2a7de03bc9c0c4db9dfabdfa11dcd0b139db271d6b7465213c0f
   languageName: node
   linkType: hard
 
@@ -6319,7 +6321,7 @@ __metadata:
   resolution: "nuxt-app@workspace:."
   dependencies:
     "@nuxt/image": "npm:^1.5.0"
-    "@nuxtjs/color-mode": "npm:^3.3.3"
+    "@nuxtjs/color-mode": "npm:3.4.0"
     "@nuxtjs/i18n": "npm:^8.3.0"
     "@nuxtjs/tailwindcss": "npm:^6.11.4"
     "@pinia/nuxt": "npm:^0.5.1"

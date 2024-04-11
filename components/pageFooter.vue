@@ -3,7 +3,7 @@
  * @Date: 2024-04-03 16:55:40
  * @LastEditors: QuestionMark001
  * @LastEditTime: 2024-04-09 21:16:23
- * @FilePath: \CNSA-Nuxt\components\pageFooter.vue
+ * @FilePath: \CNSA-Nuxt\components\PageFooter.vue
  * @Description: 页尾组件
  * 
  * Copyright (c) 2024 by QuestionMark001, All Rights Reserved. 

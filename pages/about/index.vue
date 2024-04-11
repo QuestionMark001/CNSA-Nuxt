@@ -1,6 +1,6 @@
 <template>
     <div>
-        关于机构
+        关于我们
     </div>
 </template>
 

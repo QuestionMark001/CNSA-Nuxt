@@ -2,8 +2,8 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-04 17:08:23
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-04 17:09:31
- * @FilePath: \CNSA-Nuxt\tailwind.config.js
+ * @LastEditTime: 2024-04-11 17:11:56
+ * @FilePath: \CNSA-Nuxt\tailwind.config.ts
  * @Description: tailwindCSS 配置
  * 
  * Copyright (c) 2024 by QuestionMark001, All Rights Reserved. 

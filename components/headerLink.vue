@@ -3,7 +3,7 @@
  * @Date: 2024-04-04 20:37:53
  * @LastEditors: QuestionMark001
  * @LastEditTime: 2024-04-09 20:57:30
- * @FilePath: \CNSA-Nuxt\components\headerLink.vue
+ * @FilePath: \CNSA-Nuxt\components\HeaderLink.vue
  * @Description: 导航栏链接组件
  * 
  * Copyright (c) 2024 by QuestionMark001, All Rights Reserved. 

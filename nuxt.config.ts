@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 15:42:15
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-04 15:43:27
+ * @LastEditTime: 2024-04-11 20:32:07
  * @FilePath: \CNSA-Nuxt\nuxt.config.ts
  * @Description: Nuxt配置文件
  * 
@@ -16,7 +16,6 @@ export default defineNuxtConfig({
         "@pinia/nuxt",
         "@nuxtjs/i18n",
         "@nuxt/image",
-        "@nuxt/content",
         "nuxt-icon",
         "@nuxtjs/color-mode"
     ],

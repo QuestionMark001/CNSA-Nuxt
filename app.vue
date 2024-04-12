@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 15:42:15
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-11 19:15:10
+ * @LastEditTime: 2024-04-12 20:59:21
  * @FilePath: \CNSA-Nuxt\app.vue
  * @Description: 主组件
  * 
@@ -17,7 +17,7 @@
             <HeaderLink />
         </PageHeader>
 
-        <div class="md:mx-28 mx-6 my-24">
+        <div class="lg:my-0 mx-0 my-20">
             <!-- Nuxt页面路由 -->
             <NuxtPage />
         </div>

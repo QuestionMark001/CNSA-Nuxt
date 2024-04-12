@@ -10,22 +10,22 @@
 -->
 
 <template>
-    <li class="hover:font-semibold drop-shadow-md shadow-black">
+    <li class="hover:font-semibold lg:text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/about">
             <Icon name="ph:info" /> 关于我们
         </NuxtLink>
     </li>
-    <li class="hover:font-semibold drop-shadow-md shadow-black">
+    <li class="hover:font-semibold lg:text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/articles">
             <Icon name="ph:article" /> 文章公告
         </NuxtLink>
     </li>
-    <li class="hover:font-semibold drop-shadow-md shadow-black">
+    <li class="hover:font-semibold lg:text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/videos">
             <Icon name="ph:video" /> 视频展示
         </NuxtLink>
     </li>
-    <li class="hover:font-semibold drop-shadow-md shadow-black">
+    <li class="hover:font-semibold lg:text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="#">
             <Icon name="ion:share-social-sharp" /> 友情链接
         </NuxtLink>

@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 17:47:11
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-11 20:52:58
+ * @LastEditTime: 2024-04-12 20:36:04
  * @FilePath: \CNSA-Nuxt\components\PageHeader.vue
  * @Description: 导航栏组件
  * 
@@ -10,11 +10,11 @@
 -->
 
 <template>
-    <div class="w-full h-20 fixed bg-white shadow-md z-50">
-        <div class="lg:w-80 text-left w-64 hover:underline">
+    <div class="lg:pc-header-bg bg-white w-full h-20 fixed shadow-sm z-50">
+        <div class="lg:w-80 text-left w-64 hover:underline hover:decoration-sky-500">
             <NuxtLink to="/" title="CNSA">
-                <NuxtImg src="/CNSA_logo.png" class="lg:left-16 fixed w-20 top-0 left-0" />
-                <div class="lg:w-96 lg:text-2xl lg:ml-40 lg:mt-2 mt-4 ml-20 font-semibold text-base">
+                <NuxtImg src="img/CNSA_logo.png" class="lg:left-16 fixed w-20 top-0 left-0" />
+                <div class="lg:text-white lg:w-96 lg:text-2xl lg:ml-40 lg:mt-2 mt-4 ml-20 font-semibold text-base">
                     China National Space Administration
                 </div>
             </NuxtLink>

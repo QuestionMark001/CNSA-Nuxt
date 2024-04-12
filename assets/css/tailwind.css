@@ -3,14 +3,24 @@
 @tailwind utilities;
 
 @layer components {
+    /* PC端导航栏背景颜色 */
+    .pc-header-bg {
+        background-color: transparent;
+        background-image: linear-gradient(180deg, var(--tw-gradient-stops));
+        --tw-gradient-from: rgba(0, 0, 0, 0.75);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent);
+        --tw-gradient-to: transparent;
+    }
+
     /* PC端导航栏链接下划线动效 */
     @media all and (min-width: 1024px) {
         .pc-link-line {
+            border-color: #0ea5e9;
             transition: border-color 0.3s ease; /* 添加过渡动画 */
         }
 
         .pc-link-line:hover {
-            border-bottom-width: 2px;
+            border-bottom-width: 3px;
             --tw-border-opacity: 1;
             border-color: rgba(3, 105, 161, var(--tw-border-opacity)); /* 蓝色 */
         }

@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     ],
     // 配置图片资源路径
     image: {
-        dir: 'assets/img',
+        dir: 'assets/',
     },
     // 指定 tailwindCSS 配置文件地址
     tailwindcss: {

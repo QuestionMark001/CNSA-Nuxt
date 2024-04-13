@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    /* PC端导航栏背景颜色 */
+    /* PC端导航栏背景颜色（透明） */
     .pc-header-bg {
         background-color: transparent;
         background-image: linear-gradient(180deg, var(--tw-gradient-stops));
@@ -12,11 +12,22 @@
         --tw-gradient-to: transparent;
     }
 
+    /* 控制导航栏背景颜色为白色 */
+    .pc-header-bg.header-white-bg {
+        background-color: #fff;
+        background-image: none;
+    }
+
+    /* 控制导航栏主标题字体颜色为黑色 */
+    .lg\:text-white.text-black{
+        color: black;
+    }
+
     /* PC端导航栏链接下划线动效 */
     @media all and (min-width: 1024px) {
         .pc-link-line {
             border-color: #0ea5e9;
-            transition: border-color 0.3s ease; /* 添加过渡动画 */
+            transition: border-color 0.3s ease-in-out; /* 添加过渡动画 */
         }
 
         .pc-link-line:hover {
@@ -78,7 +89,7 @@
             top: 4rem;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 500px;
             display: flex;
             flex-direction: column;
             gap: 1.15rem;

@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 15:42:15
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-11 20:32:07
+ * @LastEditTime: 2024-04-15 17:10:08
  * @FilePath: \CNSA-Nuxt\nuxt.config.ts
  * @Description: Nuxt配置文件
  * 
@@ -12,12 +12,13 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
-        "@nuxtjs/tailwindcss",
-        "@pinia/nuxt",
-        "@nuxtjs/i18n",
-        "@nuxt/image",
-        "nuxt-icon",
-        "@nuxtjs/color-mode"
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
+        '@nuxtjs/i18n',
+        '@nuxt/image',
+        'nuxt-icon',
+        '@nuxtjs/color-mode',
+        'nuxt-swiper'
     ],
     // 配置图片资源路径
     image: {

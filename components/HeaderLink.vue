@@ -10,6 +10,13 @@
 -->
 
 <template>
+    <!-- 仅在移动端显示此项： -->
+    <li class="lg:hidden flex text-sky-500 hover:font-semibold drop-shadow-md shadow-black">
+        <NuxtLink class="flex items-center" @click="closeMenu" to="/">
+            <Icon name="ph:house-line" /> 返回首页
+        </NuxtLink>
+    </li>
+
     <li class="hover:font-semibold text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="/about">
             <Icon name="ph:info" /> 关于我们
@@ -28,12 +35,6 @@
     <li class="hover:font-semibold text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="#">
             <Icon name="ion:share-social-sharp" /> 友情链接
-        </NuxtLink>
-    </li>
-    <!-- 仅在移动端显示此项： -->
-    <li class="lg:hidden flex text-sky-500 hover:font-semibold drop-shadow-md shadow-black">
-        <NuxtLink class="flex items-center" @click="closeMenu" to="/">
-            <Icon name="ph:house-line" /> 返回首页
         </NuxtLink>
     </li>
 </template>

@@ -1194,7 +1194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.2":
+"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.2, @nuxt/kit@npm:^3.7.0":
   version: 3.11.2
   resolution: "@nuxt/kit@npm:3.11.2"
   dependencies:
@@ -6327,6 +6327,7 @@ __metadata:
     "@pinia/nuxt": "npm:^0.5.1"
     nuxt: "npm:3.11.2"
     nuxt-icon: "npm:^0.6.10"
+    nuxt-swiper: "npm:^1.2.2"
     vue: "npm:^3.4.21"
     vue-router: "npm:^4.3.0"
   languageName: unknown
@@ -6341,6 +6342,16 @@ __metadata:
     "@nuxt/devtools-kit": "npm:^1.1.1"
     "@nuxt/kit": "npm:^3.11.1"
   checksum: 10c0/948be6855be13f687c027943668af8d0aa804803d5add768a5dbbd3296fa49eba0185a2e0049c24fd0a8903632e25703de8d7f78c8326678bc21a059edada7b0
+  languageName: node
+  linkType: hard
+
+"nuxt-swiper@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "nuxt-swiper@npm:1.2.2"
+  dependencies:
+    "@nuxt/kit": "npm:^3.7.0"
+    swiper: "npm:^10.2.0"
+  checksum: 10c0/99206dcfe7d414b459c7f7db360647dc188e5d7b89cd285045595eca9cd197d04c70c82ada5ab00eca8b17b3c133d4a9fe2cc596d46245b81b449ce7f090b9ac
   languageName: node
   linkType: hard
 
@@ -8231,6 +8242,13 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: 10c0/28fa9061ccbcf2e3616d48d1feb613aaa05f8f290a329beb0e585914f1864385152934a7d4d683a4609fafbae3d51666633437c359c5c5ef74fb58ad09092a7c
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^10.2.0":
+  version: 10.3.1
+  resolution: "swiper@npm:10.3.1"
+  checksum: 10c0/1e9ad5480cbf451d99fab280553d5105eb314f381d98610771f0808cac03962d87967a190696686d62bce8e4ebcbf34962c369f9d502b34fef1582ced17f6f98
   languageName: node
   linkType: hard
 

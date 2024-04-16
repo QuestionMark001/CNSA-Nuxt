@@ -13,7 +13,7 @@
         "@nuxt/image": "^1.5.0",
         "nuxt": "3.11.2",
         "nuxt-swiper": "^1.2.2",
-        "vue": "^3.4.21",
+        "vue": "3.4.22",
         "vue-router": "^4.3.0"
     },
     "devDependencies": {
@@ -21,6 +21,7 @@
         "@nuxtjs/i18n": "^8.3.0",
         "@nuxtjs/tailwindcss": "^6.11.4",
         "@pinia/nuxt": "^0.5.1",
+        "dayjs-nuxt": "^2.1.9",
         "nuxt-icon": "^0.6.10"
     },
     "packageManager": "yarn@4.1.1"

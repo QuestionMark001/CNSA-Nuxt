@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 16:06:04
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-15 22:22:28
+ * @LastEditTime: 2024-04-16 17:48:45
  * @FilePath: \CNSA-Nuxt\pages\index.vue
  * @Description: 首页
  * 
@@ -25,20 +25,20 @@
         }"
         :pagination="{
             clickable: true
-        }"
-        >
+        }">
             <SwiperSlide v-for="(image, index) in images" :key="index">
                 <NuxtImg
                 :src="image.src"
                 :alt="image.alt"
                 :title="image.title"
                 layout="responsive"
-                class="swiper-img"
-                />
+                class="swiper-img" />
             </SwiperSlide>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </Swiper>
+
+        <IndexTime />
     </div>
 </template>
 
@@ -65,5 +65,35 @@ const images = ref([
 
 .swiper-button-next {
     color: rgb(218, 236, 255);
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
 }
 </style>

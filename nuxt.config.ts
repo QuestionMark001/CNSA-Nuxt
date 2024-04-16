@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 15:42:15
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-15 17:10:08
+ * @LastEditTime: 2024-04-16 18:03:34
  * @FilePath: \CNSA-Nuxt\nuxt.config.ts
  * @Description: Nuxt配置文件
  * 
@@ -18,7 +18,8 @@ export default defineNuxtConfig({
         '@nuxt/image',
         'nuxt-icon',
         '@nuxtjs/color-mode',
-        'nuxt-swiper'
+        'nuxt-swiper',
+        'dayjs-nuxt'
     ],
     // 配置图片资源路径
     image: {

@@ -97,8 +97,7 @@
         </div>
         <div class="ml-3">
             <NuxtLink to="https://github.com/QuestionMark001/CNSA-Nuxt"
-            target="_blank" rel="noopener noreferrer"
-                class="hover:underline">
+            target="_blank" rel="noopener noreferrer" class="hover:underline">
                 <small>*注：本项目仅为个人开源作品，并非 NASA JPL 或 CNSA 官网。</small>
                 <Icon name="logos:github-octocat" size="32" />
             </NuxtLink>

@@ -12,7 +12,7 @@
 <template>
     <!-- 首页轮播图 -->
     <IndexCarousel />
-    <!-- 首页时间显示 -->
+    <!-- 首页时间显示（从右往左展示） -->
     <div class="flex flex-row-reverse mt-6">
         <IndexTime />
     </div>

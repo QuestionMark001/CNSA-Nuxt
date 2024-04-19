@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-04 20:37:53
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-13 21:40:39
+ * @LastEditTime: 2024-04-19 17:18:16
  * @FilePath: \CNSA-Nuxt\components\HeaderLink.vue
  * @Description: 导航栏链接组件
  * 
@@ -34,7 +34,7 @@
     </li>
     <li class="hover:font-semibold text-sky-500 drop-shadow-md shadow-black">
         <NuxtLink class="flex items-center pc-link-line" @click="closeMenu" to="#">
-            <Icon name="ion:share-social-sharp" /> 友情链接
+            <Icon name="ph:share-network-fill" /> 友情链接
         </NuxtLink>
     </li>
 </template>

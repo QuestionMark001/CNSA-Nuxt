@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 16:06:04
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-17 21:37:01
+ * @LastEditTime: 2024-04-19 18:14:29
  * @FilePath: \CNSA-Nuxt\pages\index.vue
  * @Description: 首页
  * 
@@ -12,13 +12,13 @@
 <template>
     <!-- 首页轮播图 -->
     <IndexCarousel />
-    <!-- 首页时间显示（从右往左展示） -->
+    <!-- 首页时间显示 -->
     <div class="flex flex-row-reverse mt-6">
         <IndexTime />
     </div>
 
     <!-- 首页内容展示 -->
-    <div class="lg:m-10 m-5">
+    <div class="lg:m-12 m-5">
         <div>Test 内容</div>
         <div>Test 内容</div>
         <div>Test</div>

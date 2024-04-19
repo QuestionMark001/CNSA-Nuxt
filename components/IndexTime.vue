@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-16 17:53:34
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-19 17:01:16
+ * @LastEditTime: 2024-04-19 21:37:09
  * @FilePath: \CNSA-Nuxt\components\IndexTime.vue
  * @Description: 首页时间显示
  * 
@@ -10,35 +10,47 @@
 -->
 
 <template>
-    <!-- TODO: 将 IndexTime 组件重构为 grid布局 -->
-    <div class="bg-[#f5f5f5] gap-3 w-[95%] flex flex-col items-end self-end p-4 rounded-l-md">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[97%] w-[100%] lg:rounded-l-lg gap-8 p-12 bg-gray-100">
         <!-- 中国航天日 -->
-        <div class="text-[#1879bd] text-base">中国航天日</div>
-        <time class="font-extrabold text-3xl">{{ todayIsSpaceDay }}</time>
-        <NuxtLink to=""
-        target="_blank" rel="noopener noreferrer" class="hover:underline">
-            <Icon name="ph:arrow-circle-up-right"
-            class="arrow-icon text-[#1879bd] hover:text-blue-600"
-            size="50" />
-        </NuxtLink>
-        <!-- 第一艘载人飞船发射距今时间差 -->
-        <div class="text-[#1879bd] text-base">第一艘载人飞船发射距今</div>
-        <time class="font-extrabold text-3xl">{{ shenZhouVDiff }}</time>
-        <NuxtLink to="https://www.youtube.com/watch?v=Wo_MquF2br8"
-        target="_blank" rel="noopener noreferrer" class="hover:underline">
-            <Icon name="ph:arrow-circle-up-right"
-            class="arrow-icon text-[#1879bd] hover:text-blue-600"
-            size="50" />
-        </NuxtLink>
+        <div>
+            <div class="text-base font-semibold text-[#1879bd] pb-3">中国航天日</div>
+            <time class="font-extrabold text-3xl">{{ todayIsSpaceDay }}</time>
+            <NuxtLink to="https://www.bilibili.com/video/BV18Z4y117Z8" target="_blank" rel="noopener noreferrer">
+                <br />
+                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                    size="50" />
+            </NuxtLink>
+        </div>
+        <!-- 嫦娥一号发射距今 -->
+        <div>
+            <div class="text-base font-semibold text-[#1879bd] pb-3">嫦娥一号发射距今</div>
+            <time class="font-extrabold text-3xl">{{ chang_e_1_diff }}</time>
+            <NuxtLink to="https://www.bilibili.com/video/BV1Xt4y1a7aY" target="_blank" rel="noopener noreferrer">
+                <br />
+                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                    size="50" />
+            </NuxtLink>
+        </div>
+        <!-- 中国第一艘载人飞船发射距今时间差 -->
+        <div>
+            <div class="text-base font-semibold text-[#1879bd] pb-3">中国第一艘载人飞船发射距今</div>
+            <time class="font-extrabold text-3xl">{{ shenZhouVDiff }}</time>
+            <NuxtLink to="https://www.bilibili.com/video/BV1HV41127jh" target="_blank" rel="noopener noreferrer">
+                <br />
+                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                    size="50" />
+            </NuxtLink>
+        </div>
         <!-- 当前时间 -->
-        <div class="text-[#1879bd] text-base">当前时间</div>
-        <time class="font-extrabold text-3xl">{{ currentTime }}</time>
-        <NuxtLink to="https://time.is/"
-        target="_blank" rel="noopener noreferrer" class="hover:underline">
-            <Icon name="ph:arrow-circle-up-right"
-            class="arrow-icon text-[#1879bd] hover:text-blue-600"
-            size="50" />
-        </NuxtLink>
+        <div>
+            <div class="text-base font-semibold text-[#1879bd] pb-3">当前时间</div>
+            <time class="font-extrabold text-3xl">{{ currentTime }}</time>
+            <NuxtLink to="https://time.is/" target="_blank" rel="noopener noreferrer">
+                <br />
+                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                    size="50" />
+            </NuxtLink>
+        </div>
     </div>
 </template>
 
@@ -58,10 +70,14 @@ onMounted(() => {
 });
 
 
-/* 第一艘载人飞船发射距今多少天 */
-const shenZhouVStart = '2003-10-15';                          // 第一艘载人飞船发射时间（YYYY-MM-DD）
+/* 中国第一艘载人飞船发射距今多少天 */
+const shenZhouVStart = '2003-10-15';                          // 中国第一艘载人飞船发射时间（YYYY-MM-DD）
 const todayTime = dayjs(new Date()).format('YYYY-MM-DD');     // 当前时间（YYYY-MM-DD）
 const shenZhouVDiff = getDateDiff(shenZhouVStart, todayTime); // 算出时间差（XX年XX月XX天）
+
+/* 嫦娥一号发射距今多少天 */
+const chang_e_1_start = '2007-10-24';                           // 嫦娥一号发射时间（YYYY-MM-DD）
+const chang_e_1_diff = getDateDiff(chang_e_1_start, todayTime); // 算出时间差（XX年XX月XX天）
 
 /* 计算日期时间差并返回格式化字符串的函数 */
 function getDateDiff(startDateString: string, endDateString: string) {
@@ -85,7 +101,7 @@ function getDateDiff(startDateString: string, endDateString: string) {
 };
 
 
-/* 计算是否为国家航天日 */
+/* 检测是否为国家航天日 */
 const todayTime2 = dayjs(new Date()).format('MM-DD'); // 当前时间（MM-DD）
 const todayIsSpaceDay = isSpaceDay(todayTime2);
 

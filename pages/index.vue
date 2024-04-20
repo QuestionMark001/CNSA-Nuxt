@@ -13,24 +13,12 @@
     <!-- 首页轮播图 -->
     <IndexCarousel />
     <!-- 首页时间显示 -->
-    <div class="flex flex-row-reverse mt-6">
-        <IndexTime />
-    </div>
-
+    <IndexTime />
     <!-- 首页内容展示 -->
-    <div class="lg:m-12 m-5">
-        <div>Test 内容</div>
-        <div>Test 内容</div>
-        <div>Test</div>
-        <div>Test</div>
-        <div>Test</div>
-        <div>Test</div>
-        <div>Test</div>
-    </div>
+    <IndexContent />
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>

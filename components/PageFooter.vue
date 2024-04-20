@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 16:55:40
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-04-09 21:16:23
+ * @LastEditTime: 2024-04-20 20:14:35
  * @FilePath: \CNSA-Nuxt\components\PageFooter.vue
  * @Description: 页尾组件
  * 
@@ -80,26 +80,44 @@
                     </h3>
                     <ul>
                         <li class="mb-2">
-                            <NuxtLink to="" class="hover:underline">X</NuxtLink>
+                            <NuxtLink to="" class="hover:underline">
+                                <Icon name="logos:twitter" size="25" /> X
+                            </NuxtLink>
                         </li>
                         <li class="mb-2">
-                            <NuxtLink to="" class="hover:underline">Youtube</NuxtLink>
+                            <NuxtLink to="" class="hover:underline">
+                                <Icon name="logos:youtube-icon" size="25" /> Youtube
+                            </NuxtLink>
                         </li>
                         <li class="mb-2">
-                            <NuxtLink to="" class="hover:underline">BiliBili</NuxtLink>
+                            <NuxtLink to="" class="hover:underline">
+                                <Icon name="tabler:brand-bilibili" size="25" class="text-[#ff6699]" /> BiliBili
+                            </NuxtLink>
                         </li>
                         <li class="mb-2">
-                            <NuxtLink to="" class="hover:underline">Weibo</NuxtLink>
+                            <NuxtLink to="" class="hover:underline">
+                                <Icon name="tabler:brand-weibo" size="25" class="text-[#fa2f2f]" /> Weibo
+                            </NuxtLink>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="ml-3">
+        <!-- 版权说明 -->
+        <div class="flex ml-5 my-5">
             <NuxtLink to="https://github.com/QuestionMark001/CNSA-Nuxt"
             target="_blank" rel="noopener noreferrer" class="hover:underline">
                 <small>*注：本项目仅为个人开源作品，并非 NASA JPL 或 CNSA 官网。</small>
                 <Icon name="logos:github-octocat" size="32" />
+            </NuxtLink>
+        </div>
+        <!-- 本项目框架说明 -->
+        <div class="flex justify-center items-center">
+            <NuxtLink to="https://nuxt.com/"
+            target="_blank" rel="noopener noreferrer" class="hover:underline">
+                <small>本项目由 </small>
+                <Icon name="logos:nuxt" size="64" />
+                <small> 强力驱动。</small>
             </NuxtLink>
         </div>
     </footer>

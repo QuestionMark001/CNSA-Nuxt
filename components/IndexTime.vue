@@ -10,46 +10,48 @@
 -->
 
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[97%] w-[100%] lg:rounded-l-lg gap-8 p-12 bg-gray-100">
-        <!-- 中国航天日 -->
-        <div>
-            <div class="text-base font-semibold text-[#1879bd] pb-3">中国航天日</div>
-            <time class="font-extrabold text-3xl">{{ todayIsSpaceDay }}</time>
-            <NuxtLink to="https://www.bilibili.com/video/BV18Z4y117Z8" target="_blank" rel="noopener noreferrer">
-                <br />
-                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
-                    size="50" />
-            </NuxtLink>
-        </div>
-        <!-- 嫦娥一号发射距今 -->
-        <div>
-            <div class="text-base font-semibold text-[#1879bd] pb-3">嫦娥一号发射距今</div>
-            <time class="font-extrabold text-3xl">{{ chang_e_1_diff }}</time>
-            <NuxtLink to="https://www.bilibili.com/video/BV1Xt4y1a7aY" target="_blank" rel="noopener noreferrer">
-                <br />
-                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
-                    size="50" />
-            </NuxtLink>
-        </div>
-        <!-- 中国第一艘载人飞船发射距今时间差 -->
-        <div>
-            <div class="text-base font-semibold text-[#1879bd] pb-3">中国第一艘载人飞船发射距今</div>
-            <time class="font-extrabold text-3xl">{{ shenZhouVDiff }}</time>
-            <NuxtLink to="https://www.bilibili.com/video/BV1HV41127jh" target="_blank" rel="noopener noreferrer">
-                <br />
-                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
-                    size="50" />
-            </NuxtLink>
-        </div>
-        <!-- 当前时间 -->
-        <div>
-            <div class="text-base font-semibold text-[#1879bd] pb-3">当前时间</div>
-            <time class="font-extrabold text-3xl">{{ currentTime }}</time>
-            <NuxtLink to="https://time.is/" target="_blank" rel="noopener noreferrer">
-                <br />
-                <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
-                    size="50" />
-            </NuxtLink>
+    <div class="flex flex-row-reverse mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[97%] w-[100%] lg:rounded-l-lg gap-8 p-12 bg-gray-100">
+            <!-- 中国航天日 -->
+            <div>
+                <div class="text-base font-semibold text-[#1879bd] pb-3">中国航天日</div>
+                <time class="font-extrabold text-3xl">{{ todayIsSpaceDay }}</time>
+                <NuxtLink to="https://www.bilibili.com/video/BV18Z4y117Z8" target="_blank" rel="noopener noreferrer">
+                    <br />
+                    <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                        size="50" />
+                </NuxtLink>
+            </div>
+            <!-- 嫦娥一号发射距今 -->
+            <div>
+                <div class="text-base font-semibold text-[#1879bd] pb-3">嫦娥一号发射距今</div>
+                <time class="font-extrabold text-3xl">{{ chang_e_1_diff }}</time>
+                <NuxtLink to="https://www.bilibili.com/video/BV1Xt4y1a7aY" target="_blank" rel="noopener noreferrer">
+                    <br />
+                    <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                        size="50" />
+                </NuxtLink>
+            </div>
+            <!-- 中国第一艘载人飞船发射距今时间差 -->
+            <div>
+                <div class="text-base font-semibold text-[#1879bd] pb-3">中国第一艘载人飞船发射距今</div>
+                <time class="font-extrabold text-3xl">{{ shenZhouVDiff }}</time>
+                <NuxtLink to="https://www.bilibili.com/video/BV1HV41127jh" target="_blank" rel="noopener noreferrer">
+                    <br />
+                    <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                        size="50" />
+                </NuxtLink>
+            </div>
+            <!-- 当前时间 -->
+            <div>
+                <div class="text-base font-semibold text-[#1879bd] pb-3">当前时间</div>
+                <time class="font-extrabold text-3xl">{{ currentTime }}</time>
+                <NuxtLink to="https://time.is/" target="_blank" rel="noopener noreferrer">
+                    <br />
+                    <Icon name="ph:arrow-circle-up-right" class="arrow-icon text-[#1879bd] hover:text-blue-600 mt-2"
+                        size="50" />
+                </NuxtLink>
+            </div>
         </div>
     </div>
 </template>

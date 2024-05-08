@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-20 17:42:43
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-05-08 18:19:58
+ * @LastEditTime: 2024-05-08 19:39:39
  * @FilePath: \CNSA-Nuxt\components\IndexContent.vue
  * @Description: 首页内容组件
  * 
@@ -16,7 +16,6 @@
             最新消息
         </div>
         <div class="swiper-message-container">
-            <!-- FIXME: 手机端下滑到这个模块附近打开导航栏，导航栏会异常收起 -->
             <Swiper :modules="[SwiperNavigation, SwiperPagination, SwiperVirtual]" :navigation="{
                 enabled: true,
                 prevEl: '.swiper-button-prev',

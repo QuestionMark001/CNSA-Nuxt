@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-03 17:47:11
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-05-08 19:30:12
+ * @LastEditTime: 2024-05-08 19:37:54
  * @FilePath: \CNSA-Nuxt\components\PageHeader.vue
  * @Description: 导航栏组件
  * 
@@ -52,6 +52,13 @@ export default defineComponent({
             // 移动端展开菜单后隐藏内容页滚动条
             if (menuStore.menuOpen) {
                 document.body.classList.add('scroll-hide');
+                // 移动端导航栏展开后，强制显示导航栏
+                const header = document.querySelector('.lg\\:pc-header-bg');
+                if (header) {
+                    setTimeout(() => {
+                        header.classList.remove('header-hidden');
+                    }, 100); // 100ms后执行
+                }
             } else {
                 document.body.classList.remove('scroll-hide');
             }

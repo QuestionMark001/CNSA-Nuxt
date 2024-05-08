@@ -105,4 +105,13 @@
             overflow-y: hidden;
         }
     }
+
+    /* 自定义基础Grid样式（BaseGrid） */
+    @media (min-width: 1024px) {
+        .BaseGrid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+    }
 }

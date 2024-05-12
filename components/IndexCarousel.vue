@@ -42,8 +42,8 @@
 
 <script setup>
 const images = ref([
-    { src: 'img/foreword.jpg', alt: '前言', title: '前言' },
-    { src: 'img/Chang\'e-5.jpg', alt: '嫦娥五号', title: '嫦娥五号' }
+    { src: 'img/indexImg/foreword.jpg', alt: '前言', title: '前言' },
+    { src: 'img/indexImg/Chang\'e-5.jpg', alt: '嫦娥五号', title: '嫦娥五号' }
 ]);
 </script>
 

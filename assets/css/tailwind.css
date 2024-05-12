@@ -111,7 +111,16 @@
         .BaseGrid {
             display: grid;
             grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 1.5rem;
+            gap: 3.5rem;
         }
+    }
+
+    /* 自定义B站视频嵌入样式 */
+    .bilibili-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
     }
 }

@@ -2,7 +2,7 @@
  * @Author: QuestionMark001
  * @Date: 2024-04-20 17:42:43
  * @LastEditors: QuestionMark001
- * @LastEditTime: 2024-05-12 18:55:13
+ * @LastEditTime: 2024-05-13 20:16:19
  * @FilePath: \CNSA-Nuxt\components\IndexContent.vue
  * @Description: 首页内容组件
  * 
@@ -97,6 +97,17 @@
             </div>
         </div>
     </div>
+
+    <!-- 隶属部门标语 -->
+    <div class="BaseGrid container mx-auto lg:my-16 my-12">
+        <div class="lg:col-start-2 lg:col-end-12 col-start-1 col-end-13 lg:px-0 px-4 relative">
+            <div class="md:px-0 px-4 mx-auto text-center">
+                <hr class="md:slogan-hr-pc slogan-hr-base  lg:mb-6 mb-3" />
+                <p class="md:slogan-pc slogan-base">CNSA由中华人民共和国工业和信息化部管理</p>
+                <hr class="md:slogan-hr-pc slogan-hr-base  lg:mt-6 mt-3" />
+            </div>
+        </div>
+    </div>
 </template>
 
 <script lang="ts" setup>
@@ -150,7 +161,8 @@ const messages = ref([
     height: 288px;
 }
 /* 自定义按钮样式（背景） */
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     background-color: #1879bd;
     border: none;
     cursor: pointer;
@@ -158,11 +170,16 @@ const messages = ref([
     width: 60px;
     height: 60px;
 }
-.swiper-button-prev:hover, .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
     background-color: #125f96;
 }
+
+
 /* 自定义按钮样式（箭头） */
-.swiper-button-prev:after, .swiper-button-next:after {
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
     color: #fff;
     font-size: 25px;
     font-family: swiper-icons;
@@ -172,7 +189,8 @@ const messages = ref([
     line-height: 1;
 }
 /* TODO: hover箭头动画处理 */
-.swiper-button-prev:after:hover, .swiper-button-next:after:hover {
+.swiper-button-prev:after:hover,
+.swiper-button-next:after:hover {
 
 }
 /* 如果某一侧没有内容则不显示按钮 */
@@ -181,7 +199,7 @@ const messages = ref([
 }
 /* TODO: 箭头动画 */
 @keyframes swiper-button-arrow-move {
-    
+
 }
 
 
@@ -201,4 +219,7 @@ const messages = ref([
 .learn-more:hover {
     color: #125f96;
 }
+
+
+/* “隶属部门标语”CSS部分在 tailwind.css 中 */
 </style>
